@@ -10,6 +10,7 @@ char* strCat(char *str1,char *str2, int len1, int len2)
 		str[i] = str2[j];
 	}
 	str[i] = '\0';
+	free(str1);
 	return str;
 }
 
